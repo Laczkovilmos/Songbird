@@ -53,21 +53,8 @@ namespace Zenelejattszo
 
             MessageBox.Show("Üdvözöljük a Songbird zenelejáttszóban!");
 
-            if (File.Exists("lejátszottak.txt"))
-            {
-                var sorok = File.ReadAllLines("lejátszottak.txt").Distinct();
-                foreach (var sor in sorok)
-                {
-                   
-                    if (File.Exists(sor) && !musicFiles.Contains(sor))
-                    {
-                        musicFiles.Add(sor);
-                       
-                    }
-                }
-            }
 
-         
+
             FilterListBox();
 
            
