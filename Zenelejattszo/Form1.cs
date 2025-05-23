@@ -34,7 +34,7 @@ namespace Zenelejattszo
 
 
             textBox1.TextChanged += textBox1_TextChanged;
-            button7.Click += button7_Click;
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -360,6 +360,8 @@ namespace Zenelejattszo
         {
           
             string searchTerm = textBox1.Text.ToLowerInvariant().Trim();
+
+
 
             string selectedFilePathBeforeFilter = null;
             if (listBox1.SelectedIndex >= 0)

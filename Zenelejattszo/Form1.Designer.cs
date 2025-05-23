@@ -46,7 +46,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -65,7 +64,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.musicPlayer);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, 376);
+            this.panel1.Location = new System.Drawing.Point(4, 378);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 75);
             this.panel1.TabIndex = 1;
@@ -122,7 +121,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(644, 17);
+            this.label2.Location = new System.Drawing.Point(621, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 6;
@@ -131,10 +130,10 @@
             // musicPlayer
             // 
             this.musicPlayer.Enabled = true;
-            this.musicPlayer.Location = new System.Drawing.Point(0, 27);
+            this.musicPlayer.Location = new System.Drawing.Point(0, 17);
             this.musicPlayer.Name = "musicPlayer";
             this.musicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("musicPlayer.OcxState")));
-            this.musicPlayer.Size = new System.Drawing.Size(12, 45);
+            this.musicPlayer.Size = new System.Drawing.Size(10, 45);
             this.musicPlayer.TabIndex = 0;
             this.musicPlayer.Visible = false;
             this.musicPlayer.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.musicPlayer_PlayStateChange);
@@ -152,6 +151,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.Window;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(4, 82);
             this.listBox1.Name = "listBox1";
@@ -221,22 +221,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 40);
+            this.textBox1.Location = new System.Drawing.Point(86, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 20);
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
             this.textBox1.TabIndex = 14;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button7.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button7.Location = new System.Drawing.Point(207, 38);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(59, 25);
-            this.button7.TabIndex = 15;
-            this.button7.Text = "Keresés";
-            this.button7.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -256,7 +244,6 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -296,7 +283,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
